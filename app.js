@@ -10,7 +10,7 @@ $('#searchform').on('submit', async function(e) {
 	$('#searchbar').val('');
 	const idx = Math.floor(Math.random() * 50);
 	const response = await axios.get(
-		`http://api.giphy.com/v1/gifs/search?q=${searchVal}&api_key=MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym`
+		`https://api.giphy.com/v1/gifs/search?q=${searchVal}&api_key=MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym`
 	);
 	const gif =
 		response.data.data[idx].images.original
